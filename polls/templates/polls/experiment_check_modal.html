@@ -1,0 +1,6 @@
+<!-- Add your modal HTML here with a form that includes the experiment name and a checkmark -->
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Check Off</button>
+</form>
